@@ -1,0 +1,124 @@
+"use client";
+
+import { useMemo } from "react";
+import Link from "next/link";
+
+export interface BlogPost {
+  id: number;
+  title: string;
+  excerpt: string;
+  content: string;
+  author: string;
+  date: string;
+  category: string;
+  image: string;
+  readTime: string;
+}
+
+export const blogPosts: BlogPost[] = [
+  {
+    id: 1,
+    title: "How to Download the App Safely",
+    excerpt:
+      "Learn the safest way to download the App and start your gaming journey.",
+    content: `
+The App provides a fast and secure gaming experience.
+
+Downloading from trusted sources helps keep your device secure while ensuring you always receive the latest version.
+
+Our platform is optimized for performance, fast loading, and a smooth user experience across all devices.
+    `,
+    author: "Platform Team",
+    date: "2026-07-08",
+    category: "Tips",
+    image: "/images/blog/1.webp",
+    readTime: "5 min read",
+  },
+
+  {
+    id: 2,
+    title: "Top Features of Our App",
+    excerpt: "Discover why thousands of gamers prefer our App every day.",
+    content: `
+Our App comes with an intuitive interface, smooth navigation and modern gaming features.
+
+Players can easily browse games, access updates and enjoy optimized performance.
+    `,
+    author: "Platform Team",
+    date: "2026-07-07",
+    category: "Updates",
+    image: "/images/blog/2.webp",
+    readTime: "4 min read",
+  },
+
+  {
+    id: 3,
+    title: "Gaming Tips for Beginners",
+    excerpt: "New to online gaming? These tips will help you improve quickly.",
+    content: `
+Whether you're a beginner or experienced player, understanding the basics will improve your gaming experience.
+
+Practice regularly, play responsibly and explore different games.
+    `,
+    author: "Platform Team",
+    date: "2026-07-06",
+    category: "Guide",
+    image: "/images/blog/3.webp",
+    readTime: "6 min read",
+  },
+];
+
+export function BlogList() {
+  return (
+    <section className="py-16 md:py-28 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Blog Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogPosts.map((post) => (
+            <Link key={post.id} href={`/blog/${post.id}`}>
+              <article className="card-premium border-2 border-blue-200 rounded-xl overflow-hidden hover:border-blue-400 hover:shadow-lg hover:shadow-blue-200/50 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                {/* Content */}
+                <div className="p-6 flex-1 flex flex-col">
+                  {/* Read Time Info */}
+                  <div className="flex items-center justify-end mb-3">
+                    <span className="text-xs text-gray-500">
+                      {post.readTime}
+                    </span>
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-lg font-bold text-blue-600 mb-2 line-clamp-2 hover:text-blue-700">
+                    {post.title}
+                  </h3>
+
+                  {/* Excerpt */}
+                  <p className="text-gray-600 text-sm mb-4 flex-1 line-clamp-2">
+                    {post.excerpt}
+                  </p>
+
+                  {/* Footer */}
+                  <div className="flex items-center justify-between pt-4 border-t border-blue-100">
+                    <span className="text-xs text-gray-500">{post.author}</span>
+                    <span className="text-xs text-gray-500">
+                      {new Date(post.date).toLocaleDateString("en-US", {
+                        month: "short",
+                        day: "numeric",
+                        year: "numeric",
+                      })}
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </Link>
+          ))}
+        </div>
+
+        {blogPosts.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-gray-600 text-lg">No blog posts found.</p>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
