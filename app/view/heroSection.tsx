@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { downloadLink } from "@/app/constant";
-import logo from "../../public/images/logo1.png";
+import Raja7_Favicon from "../../public/images/Raja7_Favicon.png";
 
 export function HeroSection() {
   return (
@@ -76,8 +76,8 @@ export function HeroSection() {
           <div className="flex justify-center animate-slide-right">
             <div className="card-premium p-8">
               <Image
-                src={logo}
-                alt="Raja7 APK"
+                src={Raja7_Favicon}
+                alt="Raja7"
                 width={380}
                 height={700}
                 className="rounded-2xl"

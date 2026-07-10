@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import logo from "../public/images/logo.png";
+import Raja7 from "../public/images/Raja7.png";
 import { downloadLink } from "@/app/constant";
 
 const NAV_LINKS = [
@@ -26,8 +26,8 @@ export function Header() {
         <Link href="/" className="flex items-center">
           <div className="relative w-45 h-12.5">
             <Image
-              src={logo}
-              alt="Raja7 Logo"
+              src={Raja7}
+              alt="Raja7"
               fill
               priority
               className="object-cover"
