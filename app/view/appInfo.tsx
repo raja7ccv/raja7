@@ -1,5 +1,7 @@
 "use client";
 
+import { downloadLink } from "../constant";
+
 interface AppInfoData {
   generalInfo: {
     title: string;
@@ -23,7 +25,7 @@ const appInfo: AppInfoData = {
       name: "Gaming App",
       size: "28 MB",
       version: "1.4.6v (2026)",
-      downloadUrl: "#", // Replace with your actual download link
+      downloadUrl: downloadLink, // Replace with your actual download link
     },
   },
 };
