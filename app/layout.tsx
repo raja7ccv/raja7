@@ -26,6 +26,12 @@ export const metadata: Metadata = {
     "Raja7 is a trusted online casino and sports betting platform offering live casino games, Aviator, slots, cricket betting, football betting, Teen Patti, Andar Bahar, Roulette, Blackjack, Baccarat, and secure real money gaming.",
   keywords: [
     "Raja7",
+    "raja7 game",
+    "raja7 apk",
+    "raja7 game download",
+    "raja7 app",
+    "raja7 casino",
+    "raja7 betting",
     "Raja7 Live",
     "Raja7 Casino",
     "Raja7 Betting",
