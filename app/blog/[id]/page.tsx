@@ -1,5 +1,5 @@
-import BlogDetailController from "./blogDetail.controller";
 import { blogPosts } from "../data";
+import { BlogDetailController } from "./blogDetail.controller";
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
   const id = Array.isArray(params.id) ? params.id[0] : params.id;
