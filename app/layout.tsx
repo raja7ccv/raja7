@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Footer } from "../components/footer";
@@ -26,6 +26,15 @@ export const metadata: Metadata = {
     "Raja7 is a trusted online casino and sports betting platform offering live casino games, Aviator, slots, cricket betting, football betting, Teen Patti, Andar Bahar, Roulette, Blackjack, Baccarat, and secure real money gaming.",
   keywords: [
     "Raja7",
+    "raja7 game",
+    "raja7 apk",
+    "new raja7",
+    "new raja7 game",
+    "new raja7 game download",
+    "raja7 game download",
+    "raja7 app",
+    "raja7 casino",
+    "raja7 betting",
     "Raja7 Live",
     "Raja7 Casino",
     "Raja7 Betting",
@@ -87,16 +96,31 @@ export const metadata: Metadata = {
   ],
 
   creator: "Raja7",
-
   publisher: "Raja7",
 
-  robots: {
-    index: true,
-    follow: true,
+  referrer: "origin-when-cross-origin",
+  category: "gaming",
+
+  verification: {
+    google: "YOUR_GOOGLE_VERIFICATION_CODE",
   },
 
   alternates: {
     canonical: "https://raja7.live",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 
   openGraph: {
@@ -109,7 +133,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://raja7.live/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Raja7",
@@ -122,7 +146,8 @@ export const metadata: Metadata = {
     title: "Raja7 - Online Casino & Sports Betting",
     description:
       "Join Raja7 for live casino, sports betting, Aviator, and exciting online games.",
-    images: ["/og-image.jpg"],
+    creator: "@raja7",
+    images: ["https://raja7.live/og-image.jpg"],
   },
 
   icons: {
@@ -130,6 +155,34 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
+};
+
+// themeColor moved out of `metadata` — Next.js 14+ requires it in a
+// separate `viewport` export instead.
+export const viewport: Viewport = {
+  themeColor: "#0f172a",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Raja7",
+  url: "https://raja7.live",
+  description: "Raja7 is a trusted online casino and sports betting platform.",
+  publisher: {
+    "@type": "Organization",
+    name: "Raja7",
+    url: "https://raja7.live",
+  },
+};
+
+const organizationLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Raja7",
+  url: "https://raja7.live",
+  logo: "https://raja7.live/favicon.ico",
+  sameAs: ["https://twitter.com/raja7"],
 };
 
 export default function RootLayout({
@@ -142,6 +195,17 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <meta name="google-site-verification" content="abc123xyz456" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <Header />
         {children}

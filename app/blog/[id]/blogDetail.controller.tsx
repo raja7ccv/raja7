@@ -3,7 +3,7 @@
 import { useMemo } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { blogPosts } from "../view/blogList";
+import { blogPosts } from "../data";
 
 export function BlogDetailController() {
   const params = useParams<{ id: string }>();

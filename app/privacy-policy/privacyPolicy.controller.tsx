@@ -132,7 +132,7 @@ export function PrivacyPolicyController() {
             </p>
 
             <a
-              href="/contact"
+              href="/contact-us"
               className="inline-flex rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-700"
             >
               Contact Us

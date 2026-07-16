@@ -9,7 +9,7 @@ interface FAQ {
 }
 
 // Static FAQ Data
-const faqs: FAQ[] = [
+export const faqs: FAQ[] = [
   {
     id: 1,
     question: "What is this gaming platform?",
