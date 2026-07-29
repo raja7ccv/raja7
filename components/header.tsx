@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import Raja7 from "../public/images/Raja7.png";
+import Raja7 from "../public/images/Raja7.svg";
 import { downloadLink } from "@/app/constant";
 
 const NAV_LINKS = [
