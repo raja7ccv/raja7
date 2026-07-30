@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import Raja7 from "../public/images/Raja7.svg";
+import Raja7 from "../public/images/Raja7.jpeg";
 import { downloadLink } from "@/app/constant";
 
 const NAV_LINKS = [
@@ -24,7 +24,7 @@ export function Header() {
     <header className="glass-effect border-b border-blue-200 sticky top-0 z-50 shadow-sm animate-slide-down">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <div className="relative w-45 h-12.5">
+          <div className="relative w-12.5 h-12.5">
             <Image
               src={Raja7}
               alt="Raja7"
