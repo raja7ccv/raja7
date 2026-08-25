@@ -680,4 +680,133 @@ export const blogPosts: BlogPost[] = [
     image: "/images/blog/60.webp",
     readTime: "7 min read",
   },
+  {
+    id: 61,
+    title: "Mastering Aviator Pro: Multiplier Timing & Risk Strategies",
+    excerpt:
+      "Learn the core mechanics of Aviator Pro and how to effectively manage cash-out strategies during high-volatility rounds.",
+    content:
+      "Aviator Pro mechanics rely on quick execution and precise timing...",
+    author: "Game Strategy Team",
+    date: "2026-08-28",
+    category: "Guides",
+    image: "/images/blog/61.webp",
+    readTime: "5 min read",
+  },
+  {
+    id: 62,
+    title: "Understanding Dragon Tiger Odds and Card Counting Basics",
+    excerpt:
+      "A complete guide to navigating single-card games, payout structures, and betting on Tie scenarios wisely.",
+    content:
+      "Dragon Tiger offers one of the simplest card layouts in modern casinos...",
+    author: "Raja7 Team",
+    date: "2026-08-27",
+    category: "Card Games",
+    image: "/images/blog/62.webp",
+    readTime: "6 min read",
+  },
+  {
+    id: 63,
+    title: "7Up 7Down Dice Probability: How to Spot Winning Trends",
+    excerpt:
+      "Explore statistical breakdown of 2-dice combinations, sum probabilities, and high-payout Lucky 7 strategies.",
+    content:
+      "With two six-sided dice, standard statistical distribution applies directly...",
+    author: "Analytics Desk",
+    date: "2026-08-26",
+    category: "Dice Games",
+    image: "/images/blog/63.webp",
+    readTime: "4 min read",
+  },
+  {
+    id: 64,
+    title: "Andar Bahar Traditional Rules vs. Modern Mobile Formats",
+    excerpt:
+      "Trace the transformation of India’s classic card game into fast-paced digital live dealer tables.",
+    content: "From simple street play to synchronized RNG and live streams...",
+    author: "Raja7 Team",
+    date: "2026-08-25",
+    category: "Heritage Games",
+    image: "/images/blog/64.webp",
+    readTime: "8 min read",
+  },
+  {
+    id: 65,
+    title: "Teen Patti Blind Play vs. Seen Play: When to Call or Fold",
+    excerpt:
+      "Optimize your chip stack management by knowing exactly when to play unseen versus inspecting your hand.",
+    content:
+      "Choosing to play blind forces your opponents to double their stake...",
+    author: "Pro Player Column",
+    date: "2026-08-24",
+    category: "Tips & Tricks",
+    image: "/images/blog/65.webp",
+    readTime: "6 min read",
+  },
+  {
+    id: 66,
+    title: "How Two-Factor Authentication (2FA) Protects Your Wallet",
+    excerpt:
+      "Step-by-step instructions on setting up authenticator apps to lock down your deposit and withdrawal options.",
+    content:
+      "Protecting your platform balance requires more than just a strong password...",
+    author: "Security Team",
+    date: "2026-08-23",
+    category: "Security",
+    image: "/images/blog/66.webp",
+    readTime: "5 min read",
+  },
+  {
+    id: 67,
+    title: "Responsible Gaming: Setting Limits for Long-Term Enjoyment",
+    excerpt:
+      "Discover the in-app tools designed to help you track session time, establish deposit caps, and maintain balance.",
+    content:
+      "Keeping gaming fun means keeping strict control over time and budget limits...",
+    author: "Compliance Desk",
+    date: "2026-08-22",
+    category: "Platform",
+    image: "/images/blog/67.webp",
+    readTime: "4 min read",
+  },
+  {
+    id: 68,
+    title: "3 Patti Hand Rankings Explained: From High Card to Trio",
+    excerpt:
+      "Never mix up sequence, color, or pair strengths again with this visual breakdown of standard hand rankings.",
+    content:
+      "Understanding hand strength is the foundation of winning 3 Patti play...",
+    author: "Raja7 Team",
+    date: "2026-08-21",
+    category: "Guides",
+    image: "/images/blog/68.webp",
+    readTime: "5 min read",
+  },
+  {
+    id: 69,
+    title: "Optimizing Mobile Performance for Low-Bandwidth Networks",
+    excerpt:
+      "Troubleshooting tips to eliminate lag and maintain continuous updates during live dealer streams.",
+    content:
+      "A stable connection ensures real-time updates during fast multiplayer rounds...",
+    author: "Tech Support",
+    date: "2026-08-20",
+    category: "Technical",
+    image: "/images/blog/69.webp",
+    readTime: "4 min read",
+  },
+  {
+    id: 70,
+    title: "Instant Withdrawals Guide: Payment Methods & Verification",
+    excerpt:
+      "Everything you need to know about completing KYC verification to unlock seamless payout processing.",
+    content:
+      "Completing account verification early guarantees swift payment requests...",
+    author: "Payments Team",
+    date: "2026-08-19",
+    category: "Updates",
+    image: "/images/blog/70.webp",
+    readTime: "6 min read",
+  },
 ];
