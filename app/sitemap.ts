@@ -1,8 +1,10 @@
 import type { MetadataRoute } from "next";
+import { SITE_CONFIG } from "@/config/constants";
 import { blogPosts } from "./blog/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://raja7.live";
+  const baseUrl = SITE_CONFIG.url;
+  const lastModified = new Date();
 
   const staticRoutes = [
     "",
@@ -14,14 +16,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const routes = [
-    ...staticRoutes.map((p) => ({
-      url: `${base}/${p}`.replace(/\/$/, ""),
-      lastModified: new Date(),
+    ...staticRoutes.map((route) => ({
+      url: `${baseUrl}${route ? "/" + route : ""}`,
+      lastModified,
+      changeFrequency: route === "" ? "daily" : "weekly",
+      priority: route === "" ? 1.0 : 0.8,
     })),
     // Add blog posts dynamically
     ...blogPosts.map((post) => ({
-      url: `${base}/blog/${post.id}`,
+      url: `${baseUrl}/blog/${post.id}`,
       lastModified: new Date(post.date),
+      changeFrequency: "weekly",
+      priority: 0.7,
     })),
   ];
 

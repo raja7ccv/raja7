@@ -809,4 +809,265 @@ export const blogPosts: BlogPost[] = [
     image: "/images/blog/70.webp",
     readTime: "6 min read",
   },
+  {
+    id: 71,
+    title: "Understanding Crash Game RNG: How Provably Fair Systems Work",
+    excerpt:
+      "A deep dive into cryptographic hashes, seeds, and how fairness is verified in games like Aviator Pro.",
+    content:
+      "Provably fair technology allows players to independently verify the outcome of every round...",
+    author: "Tech & Security Team",
+    date: "2026-09-01",
+    category: "Security",
+    image: "/images/blog/71.webp",
+    readTime: "7 min read",
+  },
+  {
+    id: 72,
+    title: "Dragon Tiger Side Bets: Are Suited Ties Worth the Risk?",
+    excerpt:
+      "Analyzing the risk-reward ratio of secondary betting options beyond the main Dragon and Tiger spots.",
+    content:
+      "While standard bets offer near even odds, side bets introduce higher payouts with distinct house edges...",
+    author: "Analytics Desk",
+    date: "2026-08-31",
+    category: "Card Games",
+    image: "/images/blog/72.webp",
+  },
+  {
+    id: 73,
+    title: "Maximizing Battery Life During Extended Live Gaming Sessions",
+    excerpt:
+      "Top settings and optimization tricks to reduce power consumption on Android and iOS devices.",
+    content:
+      "High-frame-rate rendering and active network streams can drain battery power quickly...",
+    author: "Tech Support",
+    date: "2026-08-30",
+    category: "Technical",
+    image: "/images/blog/73.webp",
+    readTime: "4 min read",
+  },
+  {
+    id: 74,
+    title: "Andar Bahar First Card Probabilities: A Statistical Breakdown",
+    excerpt:
+      "How initial deal locations impact statistical distribution over extended gaming rounds.",
+    content:
+      "Because the middle card dictates the matching target, dealing order plays a subtle mathematical role...",
+    author: "Game Strategy Team",
+    date: "2026-08-29",
+    category: "Heritage Games",
+    image: "/images/blog/74.webp",
+    readTime: "6 min read",
+  },
+  {
+    id: 75,
+    title: "Teen Patti Bluffing Tactics: How to Read Virtual Table Dynamics",
+    excerpt:
+      "Learn when to leverage aggressive betting patterns to force folds in low-stake rounds.",
+    content:
+      "Bluffing in digital card rooms relies heavily on timing, stack sizes, and positional advantage...",
+    author: "Pro Player Column",
+    date: "2026-08-28",
+    category: "Tips & Tricks",
+    image: "/images/blog/75.webp",
+    readTime: "5 min read",
+  },
+  {
+    id: 76,
+    title: "Common Mobile Casino Phishing Scams and How to Avoid Them",
+    excerpt:
+      "Recognize fake customer support messages, SMS scams, and unauthorized domain redirects.",
+    content:
+      "Always ensure you are connecting through official application endpoints and verified SSL domains...",
+    author: "Security Team",
+    date: "2026-08-27",
+    category: "Security",
+    image: "/images/blog/76.webp",
+    readTime: "6 min read",
+  },
+  {
+    id: 77,
+    title: "Bankroll Management 101: The Unit Betting System",
+    excerpt:
+      "Structure your total balance into consistent betting units to withstand variance across fast-paced games.",
+    content:
+      "Never risk more than a fixed percentage of your total available balance on a single round...",
+    author: "Raja7 Team",
+    date: "2026-08-26",
+    category: "Guides",
+    image: "/images/blog/77.webp",
+    readTime: "5 min read",
+  },
+  {
+    id: 78,
+    title: "7Up 7Down: Martingale Strategy Pros and Cons",
+    excerpt:
+      "Evaluating progressive doubling strategies on binary outcome dice rolls.",
+    content:
+      "Progressive betting strategies aim to recover losses quickly, but table limits present real boundaries...",
+    author: "Analytics Desk",
+    date: "2026-08-25",
+    category: "Dice Games",
+    image: "/images/blog/78.webp",
+    readTime: "6 min read",
+  },
+  {
+    id: 79,
+    title: "The Evolution of South Asian Card Games in Digital Casinos",
+    excerpt:
+      "From traditional festival gatherings to global live-dealer streaming platforms.",
+    content:
+      "Cultural card classics have seamlessly transitioned into multi-platform digital titles...",
+    author: "Heritage Gaming",
+    date: "2026-08-24",
+    category: "Heritage Games",
+    image: "/images/blog/79.webp",
+    readTime: "7 min read",
+  },
+  {
+    id: 80,
+    title: "How to Clear App Cache for Smoother Graphics and Faster Load Times",
+    excerpt:
+      "Quick maintenance steps to fix visual stuttering and speed up table loading speeds.",
+    content:
+      "Accumulated temporary data can occasionally slow down local asset rendering...",
+    author: "Tech Support",
+    date: "2026-08-23",
+    category: "Technical",
+    image: "/images/blog/80.webp",
+    readTime: "3 min read",
+  },
+  {
+    id: 81,
+    title: "Understanding Payout Speed Factors for Digital Wallets vs. UPI",
+    excerpt:
+      "Comparing processing times, transaction limits, and bank clearing cycles.",
+    content:
+      "Different payment gateways process settlement queues at varying speeds depending on banking hours...",
+    author: "Payments Team",
+    date: "2026-08-22",
+    category: "Updates",
+    image: "/images/blog/81.webp",
+    readTime: "5 min read",
+  },
+  {
+    id: 82,
+    title:
+      "Aviator Pro Auto Cash-Out: Setting Conservative Safety Net Multipliers",
+    excerpt:
+      "Utilize automated execution features to lock in consistent small gains automatically.",
+    content:
+      "Automating your cash-out target eliminates emotional delays during rapid multiplier escalation...",
+    author: "Game Strategy Team",
+    date: "2026-08-21",
+    category: "Guides",
+    image: "/images/blog/82.webp",
+    readTime: "4 min read",
+  },
+  {
+    id: 83,
+    title: "3 Patti vs. Teen Patti: Key Differences and Gameplay Variations",
+    excerpt:
+      "A quick comparison guide highlighting rule adjustments and table structure variations.",
+    content:
+      "While sharing core three-card mechanics, subtle regional variations influence betting rounds...",
+    author: "Raja7 Team",
+    date: "2026-08-20",
+    category: "Card Games",
+    image: "/images/blog/83.webp",
+    readTime: "5 min read",
+  },
+  {
+    id: 84,
+    title:
+      "Account Verification Troubleshooting: Common Document Rejection Reasons",
+    excerpt:
+      "Ensure fast KYC approval by following these guidelines for ID uploads and proof of address.",
+    content:
+      "Blurry edges, glare, and outdated documents account for the vast majority of verification delays...",
+    author: "Compliance Desk",
+    date: "2026-08-19",
+    category: "Platform",
+    image: "/images/blog/84.webp",
+    readTime: "5 min read",
+  },
+  {
+    id: 85,
+    title: "Top UI Features to Customize Your Live Table Layout",
+    excerpt:
+      "Adjust chat displays, audio cues, and visual quality toggles for a tailored gaming experience.",
+    content:
+      "Tailoring interface overlays helps you stay focused on action without screen clutter...",
+    author: "Raja7 Team",
+    date: "2026-08-18",
+    category: "Platform",
+    image: "/images/blog/85.webp",
+    readTime: "4 min read",
+  },
+  {
+    id: 86,
+    title: "Why Ace is Low in Dragon Tiger: Understanding Card Hierarchy",
+    excerpt:
+      "Clarifying card valuation rules to avoid common missteps at the gaming table.",
+    content:
+      "Card rank order follows a strict hierarchy where Kings hold top value and Aces serve as point 1...",
+    author: "Raja7 Team",
+    date: "2026-08-17",
+    category: "Guides",
+    image: "/images/blog/86.webp",
+    readTime: "3 min read",
+  },
+  {
+    id: 87,
+    title: "How Push Notifications Help You Catch Time-Limited Bonuses",
+    excerpt:
+      "Enable notification channels to never miss instant daily rewards or special event tables.",
+    content:
+      "Custom alert toggles keep you informed on exclusive promotions without spamming your feed...",
+    author: "Updates Team",
+    date: "2026-08-16",
+    category: "Updates",
+    image: "/images/blog/87.webp",
+    readTime: "4 min read",
+  },
+  {
+    id: 88,
+    title: "Spotting Emotional Play: How to Prevent Tilt During Losing Streaks",
+    excerpt:
+      "Recognize mental fatigue cues and learn when to step away from active play.",
+    content:
+      "Chasing quick recoveries during bad runs often leads to uncalculated decision-making...",
+    author: "Pro Player Column",
+    date: "2026-08-15",
+    category: "Tips & Tricks",
+    image: "/images/blog/88.webp",
+    readTime: "6 min read",
+  },
+  {
+    id: 89,
+    title: "The Math Behind Equal Odds Games: Understanding House Edge",
+    excerpt:
+      "Learn how return-to-player (RTP) percentages impact long-term win expectations.",
+    content:
+      "Every casino game contains calculated theoretical returns built into rule sets...",
+    author: "Analytics Desk",
+    date: "2026-08-14",
+    category: "Guides",
+    image: "/images/blog/89.webp",
+    readTime: "6 min read",
+  },
+  {
+    id: 90,
+    title: "Raja7 Platform Update 2.4: Performance Tweaks and New Features",
+    excerpt:
+      "Check out what's new in our latest application release including faster loading and revised UI elements.",
+    content:
+      "Our latest release focuses on optimizing websocket connections and streamlining user navigation...",
+    author: "Raja7 Team",
+    date: "2026-08-13",
+    category: "Updates",
+    image: "/images/blog/90.webp",
+    readTime: "5 min read",
+  },
 ];

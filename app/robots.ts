@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { SITE_CONFIG } from "@/config/constants";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -6,14 +7,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-      },
-      // disallow common internal routes
-      {
-        userAgent: "*",
-        disallow: ["/api/", "/admin/"],
+        disallow: ["/api/", "/_next/", "/admin/"],
       },
     ],
-    sitemap: "https://raja7.live/sitemap.xml",
-    host: "https://raja7.live",
+    sitemap: `${SITE_CONFIG.url}/sitemap.xml`,
   };
 }
